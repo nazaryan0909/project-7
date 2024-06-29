@@ -72,16 +72,29 @@
 // Խնդիր 9: Պատահական բառեր նախադասությունից 
 // Ընտրել պատահական մեկ բառ նախադասությունից:
 
-function RandomSentence(toString){
-let arr = toString.split(" ")
-let index = Math.floor(Math.random() * arr.length)
-return arr[index]
+// function RandomSentence(toString){
+// let arr = toString.split(" ")
+// let index = Math.floor(Math.random() * arr.length)
+// return arr[index]
 
+// }
+// console.log(RandomSentence("Barev Alen Jan Vonc Es"))
+
+
+// Խնդիր 10: Պատահական գաղտնաբառ 
+// Գեներացնել պատահական գաղտնաբառ նշված երկարությամ
+
+function GetRandomPasswor(length){
+    let x = ""
+    for(let i = 0; i < length; i++){
+        let RandomNum = Math.floor(Math.random() * 94 + 33)
+        x =  String.fromCharCode(RandomNum) + x
+    
+    }
+    return x 
+    
 }
-console.log(RandomSentence("Barev Alen Jan Vonc Es"))
-
-
-
+console.log(GetRandomPasswor(100))
 
 
 
