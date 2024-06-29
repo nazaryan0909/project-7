@@ -61,13 +61,24 @@
 // Գեներացնել պատահական ուղղություն (N, NE, E, SE, S, SW, W, NW):
 
 
-function RandomDiretion(){
-    let arr = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"]
-    let index = Math.floor(Math.random() * arr.length)
-    return arr[index]
+// function RandomDiretion(){
+//     let arr = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"]
+//     let index = Math.floor(Math.random() * arr.length)
+//     return arr[index]
     
+// }
+// console.log(RandomDiretion())
+
+// Խնդիր 9: Պատահական բառեր նախադասությունից 
+// Ընտրել պատահական մեկ բառ նախադասությունից:
+
+function RandomSentence(toString){
+let arr = toString.split(" ")
+let index = Math.floor(Math.random() * arr.length)
+return arr[index]
+
 }
-console.log(RandomDiretion())
+console.log(RandomSentence("Barev Alen Jan Vonc Es"))
 
 
 
