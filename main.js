@@ -61,6 +61,16 @@
 // Գեներացնել պատահական ուղղություն (N, NE, E, SE, S, SW, W, NW):
 
 
+function RandomDiretion(){
+    let arr = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"]
+    let index = Math.floor(Math.random() * arr.length)
+    return arr[index]
+    
+}
+console.log(RandomDiretion())
+
+
+
 
 
 
